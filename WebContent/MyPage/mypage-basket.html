@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지 | 에코빈</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="mypage1.css">
+    <link rel="stylesheet" href="01-default.css">
+</head>
+    <body>
+        <div class="wrapper">
+            <!-- header -->
+            <div class="wrapper-header">
+                <div class="main_header">
+                    <div id="main_logo">
+                    <a href="#"><img src="img/ecobean_main_logo.png"></a>
+                    </div>
+                
+                    <nav id="menubar">
+                        <ul>
+                            <li><a href="#">기업소개</a></li>
+                            <li><a href="#">상품정보</a></li>
+                            <li><a href="#">펀딩</a></li>      
+                        </ul>
+                    <form id="menu_search">
+                        <input type="text" placeholder="Search" size="30px">               
+                        <input type="button" value="Search">
+                    </form>
+                    </nav>
+                
+                    <ul id="top_logjoin">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- my-info -->
+            <div class="mypage">
+                <h1 class="my-info-titl"><a href="mypage-basket.html">My Page</a></h1>
+                <div class="my-info-box">
+                    <figure class="my-img" style="background-image:url(img/logo_w.png)">
+                        <img src="img/logo_w.png">
+                    </figure>
+                    <div class="my-info-dsec">
+                        <h1 class="my-name">왕성택</h1>
+                        <a class="link-modify" href="#">회원정보변경</a>
+                        <p class="joind">가입일 : 2020.11.15</p>
+                    </div>
+                    <ul class="my-menu-list">
+                        <a href="mypage-point.html">
+                            <li class="my-menu-item">
+                                <i class="fab fa-product-hunt"></i>
+                                <div>포인트 &gt;</div>
+                                <strong>6,100</strong>
+                            </li>
+                        </a>
+                        <a href="mypage-basket.html">
+                            <li class="my-menu-item">
+                                <i class="fas fa-shopping-basket"></i>
+                                <div>장바구니 &gt;</div>
+                                <strong>1</strong>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- nav -->
+                <nav class="nav">
+                    <dl class="nav-list">
+                        <dh class="titl">쇼핑관리</dh>
+                        <dd class="nav-item"><a href="#">구매내역</a></dd>
+                        <dd class="nav-item"><a href="#">주문내역</a></dd>
+                        <dd class="nav-item"><a href="mypage-viewProduct.html">최근 본 상품</a></dd>
+                        <dd class="nav-item"><a href="mypage-basket.html">장바구니</a></dd>
+                        <dh class="titl">펀딩내역</dh>
+                        <dd class="nav-item"><a href="#">투자내역</a></dd>
+                        <dh class="titl">고객센터</dh>
+                        <dd class="nav-item"><a href="#">1:1문의</a></dd>
+                    </dl>
+                </nav>
+                <!-- basket -->
+                <section class="basket">
+                    <header class="basket-header">
+                        <h1 class="basket-titl">장바구니</h1>
+                    </header>
+                    <table class="basket-table">
+                        <colgroup>
+                            <col style="width:3%">
+                            <col style="width:*">
+                            <col style="width:9.5%">
+                            <col style="width:12%">
+                            <col style="width:9.5%">
+                            <col style="width:17.3%">
+                            <col style="width:12%">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">
+                                <input type="checkbox" class="check-all" id="myCheckAll" checked>
+                                <label for="myCheckAll">전체 선택</label>
+                            </th>
+                            <th scope="col">상품정보</th>
+                            <th scope="col">상품금액</th>
+                            <th scope="col">수량</th>
+                            <th scope="col">주문금액</th>
+                            <th scope="col">배송 형태/배송비</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        </thead>
+                        <tbody class="item">
+                            <tr>
+                                <td class="select">
+                                    <input type="checkbox" class="check" id="myCheck" checked>
+                                    <label for="myCheck">선택</label>
+                                </td>
+                                <td class="product-dsec">
+                                    <img src="img/01_product.png">
+                                    <div class="wrap-dsec">
+                                        <div class="company">에코 주식회사</div>
+                                        <div class="product-name">유기농 벌꿀</div>
+                                        <div class="option">재고 5개 이상</div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    23,000원
+                                </td>
+                                <td class="cnt">
+                                    1개
+                                </td>
+                                <td class="tot-price">
+                                    23,000원
+                                </td>
+                                <td class="delivery">
+                                    택배 배송<br>
+                                    <strong>배송비 무료</strong>
+                                </td>
+                                <td class="payment">
+                                    <button>
+                                        결제하기
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="select">
+                                    <input type="checkbox" class="check" id="myCheck" checked>
+                                    <label for="myCheck">선택</label>
+                                </td>
+                                <td class="product-dsec">
+                                    <img src="img/02_product.png">
+                                    <div class="wrap-dsec">
+                                        <div class="company">에코 주식회사</div>
+                                        <div class="product-name">손 순두부</div>
+                                        <div class="option">재고 5개 이상</div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    2,200원
+                                </td>
+                                <td class="cnt">
+                                    1개
+                                </td>
+                                <td class="tot-price">
+                                    2,280원
+                                </td>
+                                <td class="delivery">
+                                    택배 배송<br>
+                                    <strong>배송비 무료</strong>
+                                </td>
+                                <td class="payment">
+                                    <button>
+                                        결제하기
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="select">
+                                    <input type="checkbox" class="check" id="myCheck" checked>
+                                    <label for="myCheck">선택</label>
+                                </td>
+                                <td class="product-dsec">
+                                    <img src="img/03_product.png">
+                                    <div class="wrap-dsec">
+                                        <div class="company">에코 주식회사</div>
+                                        <div class="product-name">유기농 사과</div>
+                                        <div class="option">재고 5개 이상</div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                   6,600원
+                                </td>
+                                <td class="cnt">
+                                    2개
+                                </td>
+                                <td class="tot-price">
+                                    13,200원
+                                </td>
+                                <td class="delivery">
+                                    택배 배송<br>
+                                    <strong>배송비 무료</strong>
+                                </td>
+                                <td class="payment">
+                                    <button>
+                                        결제하기
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="select">
+                                    <input type="checkbox" class="check" id="myCheck" checked>
+                                    <label for="myCheck">선택</label>
+                                </td>
+                                <td class="product-dsec">
+                                    <img src="img/04_product.png">
+                                    <div class="wrap-dsec">
+                                        <div class="company">에코 주식회사</div>
+                                        <div class="product-name">딸기</div>
+                                        <div class="option">재고 5개 이상</div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    9,000원
+                                </td>
+                                <td class="cnt">
+                                    3개
+                                </td>
+                                <td class="tot-price">
+                                    27,000원
+                                </td>
+                                <td class="delivery">
+                                    택배 배송<br>
+                                    <strong>배송비 무료</strong>
+                                </td>
+                                <td class="payment">
+                                    <button>
+                                        결제하기
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="select">
+                                    <input type="checkbox" class="check" id="myCheck" checked>
+                                    <label for="myCheck">선택</label>
+                                </td>
+                                <td class="product-dsec">
+                                    <img src="img/05_product.png">
+                                    <div class="wrap-dsec">
+                                        <div class="company">에코 주식회사</div>
+                                        <div class="product-name">아이스 홍시</div>
+                                        <div class="option">재고 5개 이상</div>
+                                    </div>
+                                </td>
+                                <td class="price">
+                                    6,000원
+                                </td>
+                                <td class="cnt">
+                                    2개
+                                </td>
+                                <td class="tot-price">
+                                    12,000원
+                                </td>
+                                <td class="delivery">
+                                    택배 배송<br>
+                                    <strong>2,500</strong>
+                                </td>
+                                <td class="payment">
+                                    <button>
+                                        결제하기
+                                    </button>
+                                </td>
+                            </tr>
+
+                        <tbody>
+                    </table> <!-- basket-table --> 
+                    <div class="basket-Button-group">
+                        <button class="delete button-item">선택삭제</button>
+                        <button class="payment button-item">결제하기</button>
+                    </div>
+                </section> <!-- basket --> 
+            </div> <!-- myInfo --> 
+        </div> <!-- wrapper -->
+    </body>
+</html>

@@ -1,0 +1,18 @@
+table {
+	border-collapse: collapse;
+}
+tr {
+	font-size: 0.8rem;
+}
+th {
+	font-size: 0.8rem;
+    font-weight: normal;
+    padding: 1em;
+}
+a {
+	text-decoration: none;
+}
+hr {
+	border: 1px solid black;
+	margin-bottom: 1rem;
+}
