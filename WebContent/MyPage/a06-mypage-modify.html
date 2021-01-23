@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지 | 회원정보변경</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="b03-style-mypage.css">
+    <link rel="stylesheet" href="b02-style-default.css">
+    <link rel="stylesheet" href="b01-style-main.css">
+    
+</head>
+    <body>
+        <div class="wrapper">
+            <!-- header -->
+            <div class="wrapper-header">
+                <div class="main_header">
+                    <div id="main_logo">
+                    <a href="#"><img src="img/ecobean_main_logo.png"></a>
+                    </div>
+                
+                    <nav id="menubar">
+                        <ul>
+                            <li><a href="#">기업소개</a></li>
+                            <li><a href="#">상품정보</a></li>
+                            <li><a href="#">펀딩</a></li>      
+                        </ul>
+                    <form id="menu_search">
+                        <input type="text" placeholder="Search" size="30px">               
+                        <input type="button" value="Search">
+                    </form>
+                    </nav>
+                
+                    <ul id="top_logjoin">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- my-info -->
+            <div class="mypage">
+                <h1 class="my-info-titl"><a href="a01-mypage-buyList.html">My Page</a></h1>
+                <div class="my-info-box">
+                    <figure class="my-img" style="background-image:url(img/logo_w.png)">
+                        <img src="img/logo_w.png">
+                    </figure>
+                    <div class="my-info-dsec">
+                        <h1 class="my-name">왕성택</h1>
+                        <a class="link-modify" href="a06-mypage-modify.html">회원정보변경</a>
+                        <p class="joind">가입일 : 2020.11.15</p>
+                    </div>
+                    <ul class="my-menu-list">
+                        <a href="a05-mypage-point.html">
+                            <li class="my-menu-item">
+                                <i class="fab fa-product-hunt"></i>
+                                <div>포인트 &gt;</div>
+                                <strong>6,100</strong>
+                            </li>
+                        </a>
+                        <a href="a02-mypage-basket.html">
+                            <li class="my-menu-item">
+                                <i class="fas fa-shopping-basket"></i>
+                                <div>장바구니 &gt;</div>
+                                <strong>1</strong>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- nav -->
+                <nav class="nav">
+                    <dl class="nav-list">
+                        <dh class="titl">쇼핑관리</dh>
+                        <dd class="nav-item"><a href="a01-mypage-buyList.html">주문내역</a></dd>
+                        <dd class="nav-item"><a href="a03-mypage-viewProduct.html">최근 본 상품</a></dd>
+                        <dd class="nav-item"><a href="a02-mypage-basket.html">장바구니</a></dd>
+                        <dh class="titl">펀딩내역</dh>
+                        <dd class="nav-item"><a href="a04-mypage-funding.html">투자내역</a></dd>
+                        <dh class="titl">고객센터</dh>
+                        <dd class="nav-item"><a href="#">1:1문의</a></dd>
+                    </dl>
+                </nav>
+                <!-- 회원정보 변경 -->
+                <section class="userModify">
+                    <h1 class="titl">기본 회원정보</h1>
+                    <hr>
+                    <table class="infoTable">
+                        <colgroup>
+                            <col style="width: 20%"/>
+                            <col style="width: 50%"/>
+                            <col style="width: 30%"/>
+                        </colgroup>
+                        <tbody>
+                            <tr><th>아이디</th>
+                                <td colspan="2">gun5032</td></tr>
+                            <tr><th>비밀번호</th>
+                                <td>*****</td>
+                                <td><button class="btn-modify-page" onclick="Change('d',1)">비밀번호 변경</button></td>
+                            </tr>
+                            <!--비밀번호 변경-->
+                            <tr><th>비밀번호</th>
+                                <td colspan="2">
+                                    <div class="pwModify">
+                                        <div class="input">
+                                            <label for="password">현재 비밀번호</label>
+                                            <input id="password" class="n-input" type="password"/>
+                                        </div>
+                                        <div class="input">
+                                            <label for="newPassword">신규 비밀번호</label>
+                                            <input id="newPassword" class="n-input" type="password"/>
+                                        </div>
+                                        <div class="input">
+                                            <label for="confirmPassword">신규 비밀번호 재 입력</label>
+                                            <input id="confirmPassword" class="n-input"type="password"/>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="n-botton btn-delete" id="" type="button" onclick="Change('e',1)">취소</button>
+                                            <button class="n-botton btn-commit" id="" type="button" onclick="Change('e',1)">완료</button>
+                                        </div>
+                                    </div></td>
+                            </tr>
+                            <tr><th>이름</th>
+                                <td colspan="2">왕성택</td>
+                            </tr>
+                            <tr><th>주소</th>
+                                <td>충북북도 청주시 흥덕구 서원동 111번지</td>
+                                <td><button class="btn-modify-page" onclick="Change('d',4)">주소 변경</button></td>
+                            </tr>
+                            <!--주소변경-->
+                            <tr><th>주소</th>
+                                <td colspan="2">
+                                    <div class="addressModify">
+                                        <div class="input">
+                                            <label for="address">현재주소</label>
+                                            <input id="address" class="n-input" type="text"/>
+                                        </div>
+                                        <div class="input">
+                                            <label for="newAddress">새 주소</label>
+                                            <input id="newAddress" class="n-input" type="text"/>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="n-botton btn-delete" id="" type="button" onclick="Change('e',4)">취소</button>
+                                            <button class="n-botton btn-commit" id="" type="button" onclick="Change('e',4)">수정</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr><th>휴대전화</th>
+                                <td>010-1111-2222</td>
+                                <td><button class="btn-modify-page" onclick="Change('d',6)">휴대전화 변경</button></td>
+                            </tr>
+                            <!--휴대전화 변경-->
+                            <tr><th>휴대전화</th>
+                                <td>
+                                    <div class=phoneModify>
+                                        <ul class="text">
+                                            <li>휴대전화 번호 입력 후 인증번호 받기 번튼을 누르시면 인증번호가 발송됩니다.</li>
+                                            <li>3번 이상 인증 실패 시, 인증이 제한됩니다.</li>
+                                            <li>인증번호는 문자로 발송됩니다.</li>
+                                        </ul>
+                                        <div class="input">
+                                            <input class="n-input" id="" type="tel" placeholder="휴대전화 번호 입력" minlength="10"/>
+                                            <button class="btn-commit n-botton">인증</button>
+                                        </div>
+                                        <div class="input">
+                                            <input class="n-input" id="" type="text" placeholder="인증번호 입력" maxlength="5"/>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="n-botton btn-delete" id="" type="button" onclick="Change('e',6)">취소</button>
+                                            <button class="n-botton btn-commit" id="" type="button" onclick="Change('e',6)">수정</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr><th>이메일</th>
+                                <td>tjdxorv@naver.com</td>
+                                <td><button class="btn-modify-page" onclick="Change('d',8)">이메일 변경</button></td>
+                            </tr>
+                            <!--이메일 변경-->
+                            <tr><th>이메일</th>
+                                <td>
+                                    <div class=emailModify>
+                                        <ul class="text">
+                                            <li>메일주소 입력 후 인증하기 버튼을 누르시면, 회원님의 이메일로 일메일 인증 번호가 적힌메일이 발송됩니다.</li>
+                                            <li>아래에 인증 번호를 입력하시면 인증이 완료됩니다.</li>
+                                        </ul>
+                                        <div class="input">
+                                            <input class="n-input" id="" type="text" placeholder="이메일 주소 입력" maxlength="50"/>
+                                            <button class="btn-commit n-botton">인증</button>
+                                        </div>
+                                        <div class="input">
+                                            <input class="n-input" id="" type="text" placeholder="인증번호 입력" maxlength="5"/>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="n-botton btn-delete" id="" type="button" onclick="Change('e',8)">취소</button>
+                                            <button class="n-botton btn-commit" id="" type="button" onclick="Change('e',8)">수정</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section> <!-- 회원정보 변경 --> 
+            </div> <!-- myInfo --> 
+        </div> <!-- wrapper -->
+        <!-- 하단사이트정보 -->
+        <div class = "footer">
+            <table class="site_info">
+                <tr>
+                    <td>
+                        CS CENTER <br><br>
+                        평일 10:10 - 19:00 (점심시간 13:00 ~ 14:00)<br>
+                        주말 및 공휴일 휴무<br><br>
+                        <a href="">공지사항</a>
+                        <a href="">Q&A</a>
+                    </td>
+                    <td>
+                        STORE <b>에코빈</b><br>
+                        단체주문/제휴문의 <b>ecobean@naver.com</b><br>
+                        입점문의 <b>ecobean@naver.com</b><br>
+                        TEL <b>0507-1316-4635</b><br>
+                        - <br>
+                        OWNER <b>왕성택</b><br>
+                        COMPANY REG.NO <b>123-45-67890</b><br>
+                        ADDRESS <b>서울특별시 강남구 테헤란로 132<br>
+                        한독약품빌딩 8층 쌍용교육센터</b><br>
+                        Copyright ⓒ에코빈 Inc. All rights reserved.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            var trObj = document.querySelectorAll(".infoTable tr");
+            trObj[2].style.display = "none";
+            trObj[5].style.display = "none";
+            trObj[7].style.display = "none";
+            trObj[9].style.display = "none";
+            function Change(status, index) {
+                console.log(status,index);
+                if(status == "e"){
+                    trObj[index].style.display="table-row";
+                    trObj[index+1].style.display="none";
+                } else {
+                    trObj[index].style.display="none";
+                    trObj[index+1].style.display="table-row";
+                }
+            }
+        </script>
+    </body>
+</html>
