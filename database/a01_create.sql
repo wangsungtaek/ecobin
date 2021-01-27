@@ -32,7 +32,6 @@ CREATE TABLE PRODUCT (
 	p_no NUMBER CONSTRAINT product_pk PRIMARY KEY,
 	p_company VARCHAR2(30) CONSTRAINT product_company_nn NOT NULL,
 	p_name VARCHAR2(30) CONSTRAINT product_name_nn NOT NULL,
-	p_option VARCHAR(20) CONSTRAINT product_option_nn NOT NULL,
 	p_price NUMBER CONSTRAINT product_price_nn NOT NULL,
 	p_cnt NUMBER CONSTRAINT product_cnt_nn NOT NULL,
 	p_charge NUMBER CONSTRAINT product_charge_nn NOT NULL,
@@ -47,7 +46,7 @@ CREATE SEQUENCE product_no_seq;
 CREATE TABLE BASKET (
 	b_no NUMBER CONSTRAINT basket_pk PRIMARY KEY,
 	u_no NUMBER CONSTRAINT basket_u_no_fk REFERENCES MEMBER(u_no),
-	p_no NUMBER CONSTRAINT basket_p_no_fk REFERENCES PRODUCT(p_no) 
+	p_no NUMBER CONSTRAINT basket_p_no_fk REFERENCES PRODUCT(p_no)
 );
 CREATE SEQUENCE basket_no_seq;
 
@@ -63,6 +62,7 @@ CREATE TABLE ORDER_PRODUCT (
 	o_state VARCHAR2(20) CONSTRAINT order_product_state_nn NOT NULL
 );
 CREATE SEQUENCE order_pr_no_seq;
+
 
 -- 생성 : 결제(상품)
 CREATE TABLE PAYMENT_PRODUCT (
@@ -202,7 +202,7 @@ CREATE TABLE VIEW_PRODUCT (
 );
 CREATE SEQUENCE view_pro_no_seq;
 
--- DROP
+--
 DROP TABLE MEMBER;
 DROP TABLE POINT_LOG;
 DROP TABLE PRODUCT;

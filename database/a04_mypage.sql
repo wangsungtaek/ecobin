@@ -50,6 +50,8 @@ CREATE TABLE BASKET (
 );
 CREATE SEQUENCE basket_no_seq;
 
+
+
 -- 생성 : 주문(상품)
 CREATE TABLE ORDER_PRODUCT (
 	o_no NUMBER CONSTRAINT order_product_pk PRIMARY KEY,
