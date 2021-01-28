@@ -258,4 +258,49 @@ UPDATE reward
    SET rew_cnt=rew_cnt-(SELECT pa_cnt FROM order_funding WHERE rew_no=8)
    WHERE rew_no=8;
  
-SELECT * FROM 
+SELECT * FROM ORDER_FUNDING;
+SELECT * FROM REWARD;
+SELECT * FROM FUNDING;
+SELECT * FROM PAYMENT_FUNDING;
+INSERT INTO PAYMENT_FUNDING VALUES(1, 1, 1, '예약완료', '카드계산', '청주', '빠른배송 부탁드립니다.');
+INSERT INTO PAYMENT_FUNDING VALUES(2, 2, 2, '예약완료', '카드계산', '청주', '빠른배송 부탁드립니다.');
+INSERT INTO PAYMENT_FUNDING VALUES(3, 3, 3, '결재완료', '카드계산', '청주', '빠른배송 부탁드립니다.');
+INSERT INTO PAYMENT_FUNDING VALUES(4, 1, 4, '결재실패', '카드계산', '청주', '빠른배송 부탁드립니다.');
+INSERT INTO PAYMENT_FUNDING VALUES(5, 2, 3, '결재완료', '카드계산', '청주', '빠른배송 부탁드립니다.');
+INSERT INTO PAYMENT_FUNDING VALUES(6, 1, 3, '예약완료', '카드계산', '청주', '빠른배송 부탁드립니다.');
+INSERT INTO PAYMENT_FUNDING VALUES(7, 1, 4, '결재완료', '카드계산', '청주', '빠른배송 부탁드립니다.');
+INSERT INTO PAYMENT_FUNDING VALUES(8, 1, 2, '결재실패', '카드계산', '청주', '빠른배송 부탁드립니다.');
+DROP TABLE PAYMENT_FUNDING;
+
+-- 펀딩 수, 총 금액
+SELECT COUNT(*) AS 펀딩수,
+	   SUM(o.pa_price) AS 총금액
+  FROM MEMBER u, ORDER_FUNDING o, PAYMENT_FUNDING pf
+ WHERE u.u_no = o.u_no
+   AND o.pa_no = pf.pa_no
+   AND u.u_no = 1;
+  
+-- 예약완료 카운터
+SELECT COUNT(*) AS 예약완료
+  FROM MEMBER u, ORDER_FUNDING o, PAYMENT_FUNDING pf
+ WHERE u.u_no = o.u_no
+   AND o.pa_no = pf.pa_no
+   AND u.u_no = 1
+   AND pf.PAY_F_STATE = '예약완료';
+-- 결재완료 카운터
+SELECT COUNT(*) AS 결제완료
+  FROM MEMBER u, ORDER_FUNDING o, PAYMENT_FUNDING pf
+ WHERE u.u_no = o.u_no
+   AND o.pa_no = pf.pa_no
+   AND u.u_no = 1
+   AND pf.PAY_F_STATE = '결제완료';
+-- 결재실패 카운터
+SELECT COUNT(*) AS 결제완료
+  FROM MEMBER u, ORDER_FUNDING o, PAYMENT_FUNDING pf
+ WHERE u.u_no = o.u_no
+   AND o.pa_no = pf.pa_no
+   AND u.u_no = 1
+   AND pf.PAY_F_STATE = '결재실패';
+  
+  
+  

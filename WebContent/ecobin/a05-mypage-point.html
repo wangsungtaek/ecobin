@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지 | 포인트</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="b03-style-mypage.css">
+    <link rel="stylesheet" href="b02-style-default.css">
+    <link rel="stylesheet" href="b01-style-main.css">
+</head>
+    <body>
+        <div class="wrapper">
+            <!-- header -->
+            <div class="wrapper-header">
+                <div class="main_header">
+                    <div id="main_logo">
+                    <a href="#"><img src="img/ecobean_main_logo.png"></a>
+                    </div>
+                
+                    <nav id="menubar">
+                        <ul>
+                            <li><a href="#">기업소개</a></li>
+                            <li><a href="#">상품정보</a></li>
+                            <li><a href="#">펀딩</a></li>      
+                        </ul>
+                    <form id="menu_search">
+                        <input type="text" placeholder="Search" size="30px">               
+                        <input type="button" value="Search">
+                    </form>
+                    </nav>
+                
+                    <ul id="top_logjoin">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- my-info -->
+            <div class="mypage">
+                <h1 class="my-info-titl"><a href="a01-mypage-buyList.html">My Page</a></h1>
+                <div class="my-info-box">
+                    <figure class="my-img" style="background-image:url(img/logo_w.png)">
+                        <img src="img/logo_w.png">
+                    </figure>
+                    <div class="my-info-dsec">
+                        <h1 class="my-name">왕성택</h1>
+                        <a class="link-modify" href="a06-mypage-modify.html">회원정보변경</a>
+                        <p class="joind">가입일 : 2020.11.15</p>
+                    </div>
+                    <ul class="my-menu-list">
+                        <a href="a05-mypage-point.html">
+                            <li class="my-menu-item">
+                                <i class="fab fa-product-hunt"></i>
+                                <div>포인트 &gt;</div>
+                                <strong>6,100</strong>
+                            </li>
+                        </a>
+                        <a href="a02-mypage-basket.html">
+                            <li class="my-menu-item">
+                                <i class="fas fa-shopping-basket"></i>
+                                <div>장바구니 &gt;</div>
+                                <strong>1</strong>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- nav -->
+                <nav class="nav">
+                    <dl class="nav-list">
+                        <dh class="titl">쇼핑관리</dh>
+                        <dd class="nav-item"><a href="a01-mypage-buyList.html">주문내역</a></dd>
+                        <dd class="nav-item"><a href="a03-mypage-viewProduct.html">최근 본 상품</a></dd>
+                        <dd class="nav-item"><a href="a02-mypage-basket.html">장바구니</a></dd>
+                        <dh class="titl">펀딩내역</dh>
+                        <dd class="nav-item"><a href="a04-mypage-funding.html">투자내역</a></dd>
+                        <dh class="titl">고객센터</dh>
+                        <dd class="nav-item"><a href="#">1:1문의</a></dd>
+                    </dl>
+                </nav>
+                <!-- point -->
+                <section class="point">
+                    <header class="header">
+                        <h1>포인트</h1>
+                        <hr>
+                        <h2>현재 포인트</h2>
+                        <div class="value">6,400원</div>
+                    </header>
+                    <div class="align-btn">
+                        <a href="#">전체</a>
+                        <a href="#">획득</a>
+                        <a href="#">사용</a>
+                    </div>
+                    <table class="point-table">
+                        <colgroup>
+                            <col style="width:10%">
+                            <col style="width:90%">
+                        </colgroup>
+                        <thead class="table-tile">
+                            <tr><th>포인트</th><th>적립 구분</th></tr>
+                        </thead>
+                        <tbody class="point-value">
+                            <tr><td>+100</td><td>로그인 포인트</td></tr>
+                            <tr><td>+100</td><td>로그인 포인트</td></tr>
+                            <tr><td>+100</td><td>로그인 포인트</td></tr>
+                            <tr><td>+100</td><td>로그인 포인트</td></tr>
+                            <tr><td>+100</td><td>로그인 포인트</td></tr>
+                            <tr><td>+100</td><td>로그인 포인트</td></tr>
+                            <tr><td>+100</td><td>로그인 포인트</td></tr>
+                            <tr><td>+100</td><td>로그인 포인트</td></tr>
+                            <tr><td>+100</td><td>로그인 포인트</td></tr>
+                        </tbody>
+                    </table>
+                </section> <!-- point --> 
+            </div> <!-- myInfo --> 
+        </div> <!-- wrapper -->
+        <!-- 하단사이트정보 -->
+        <div class = "footer">
+            <table class="site_info">
+                <tr>
+                    <td>
+                        CS CENTER <br><br>
+                        평일 10:10 - 19:00 (점심시간 13:00 ~ 14:00)<br>
+                        주말 및 공휴일 휴무<br><br>
+                        <a href="">공지사항</a>
+                        <a href="">Q&A</a>
+                    </td>
+                    <td>
+                        STORE <b>에코빈</b><br>
+                        단체주문/제휴문의 <b>ecobean@naver.com</b><br>
+                        입점문의 <b>ecobean@naver.com</b><br>
+                        TEL <b>0507-1316-4635</b><br>
+                        - <br>
+                        OWNER <b>왕성택</b><br>
+                        COMPANY REG.NO <b>123-45-67890</b><br>
+                        ADDRESS <b>서울특별시 강남구 테헤란로 132<br>
+                        한독약품빌딩 8층 쌍용교육센터</b><br>
+                        Copyright ⓒ에코빈 Inc. All rights reserved.
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

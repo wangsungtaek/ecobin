@@ -1,0 +1,639 @@
+ /* my-info */
+.mypage {
+    margin: 0;
+    padding: 0;
+}
+.my-info-titl {
+    background-color: #A1D6BD;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin: 0;
+}
+.my-info-titl a{
+    color: white;
+    font-size: 1.3rem;
+    margin: 0;
+}
+.my-info-titl a:hover {
+    color: whitesmoke;
+}
+.my-info-box img {
+    display: none;
+}
+.my-info-box {
+    background-color: #A1D6BD;
+    height: 150px;
+}
+.my-info-box .my-img {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(239, 238, 238);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    margin: 1rem 0 0 3rem;
+    border-radius: 50%;
+    float: left;
+}
+.my-info-box .my-info-dsec {
+    margin: 16px 0 0 2rem;
+    float: left;
+}
+.my-info-box .my-info-dsec .my-name {
+    color: white;
+    display: inline;
+}
+.my-info-box .my-info-dsec .link-modify {
+    color: gray;
+    text-decoration: none;
+    margin-left: 1em;
+    font-size: 0.8rem;
+}
+.my-info-box .my-info-dsec .link-modify:hover {
+    color: whitesmoke; 
+}
+.my-info-box .my-info-dsec .joind {
+    color: gray;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+.my-info-box .my-menu-list {
+    width: 350px;
+    padding: 0;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0 50px 0 0;
+}
+.my-info-box .my-menu-item {
+    color: white;
+    font-size: 2rem;
+    line-height: 1em;
+}
+.my-info-box .my-menu-item:hover {
+    color: whitesmoke;
+}
+.my-info-box .my-menu-item > div {
+    font-size: 0.8rem;
+}
+.my-info-box::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* nav */
+.nav {
+    box-sizing: border-box;
+    width: 150px;
+    line-height: 2rem;
+    padding: 1em;
+    float: left;
+}
+.nav .nav-list {
+    margin: 0;
+}
+.nav .nav-list .titl {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.nav .nav-list .nav-item {
+    font-size: 0.8rem;
+    margin: 0;
+}
+.nav .nav-list .nav-item a {
+    color: gray;
+    text-decoration: none;
+}
+.nav .nav-list .nav-item a:hover {
+    color: #3074F6;
+}
+
+/* basket */
+.basket {
+    width: calc(1024px - 150px);
+    float: left;
+}
+.basket .basket-table{
+    border-top : 2px solid black;
+    border-bottom: 1px solid gray;
+}
+.basket .basket-table tr{
+    border-bottom: 1px solid lightgray;
+}
+.basket .basket-table th{
+    border-bottom: 1px solid black;
+}
+.basket .basket-table th label {
+    display: none;
+}
+.basket .basket-table .item tr:hover {
+    background-color: rgba(246, 246, 246, 0.978);
+}
+.basket .basket-table .item td {
+    padding: 10px 0;
+}
+.basket .basket-table .item .select {
+    text-align: center;
+}
+.basket .basket-table .item label{
+    display: none;
+    text-align: center;
+}
+.basket .basket-table .item .product-dsec {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.basket .basket-table .item .product-dsec img{
+    width: 80px;
+    height: 80px;
+}
+.basket .basket-table .item .product-dsec .wrap-dsec{
+    display: inline-block;
+    line-height: 1em;
+    margin-left: 10px;
+}
+
+.basket .basket-table .item .product-dsec .company{
+    font-size: 10px;
+    color: gray;
+}
+.basket .basket-table .item .product-dsec .product-name{
+    font-size: 12px;
+    font-weight: bold;
+}
+.basket .basket-table .item .product-dsec .option{
+    font-size: 10px;
+    color: gray;
+}
+.basket .basket-table .item .price {
+    font-size: 12px;
+    text-align: center;
+}
+.basket .basket-table .item .cnt {
+    font-size: 12px;
+    text-align: center;
+}
+.basket .basket-table .item .tot-price {
+    font-size: 12px;
+    text-align: center;
+}
+.basket .basket-table .item .delivery {
+    font-size: 12px;
+    text-align: center;
+}
+.basket .basket-table .item .payment {
+    font-size: 12px;
+    text-align: center;
+}
+.basket .basket-table .item .payment button{
+    background-color: black;
+    color: white;
+    border: 0px;
+    width: 70px;
+    height: 30px;
+}
+.basket .basket-table .item .payment button:hover{
+    color: lightgray;
+}
+.basket .basket-Button-group{
+    margin: 1em 0;
+    display: flex;
+}
+.basket .basket-Button-group .button-item:hover{
+    color: lightgrey;
+}
+.basket .basket-Button-group .delete{
+    font-size: 0.8rem;
+    width: 70px;
+    height: 30px;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+.basket .basket-Button-group .payment{
+    font-size: 1rem;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-left: calc(437px - 200px);
+}
+
+/* point */
+.point {
+   width: calc(1024px - 150px);
+   float: left;
+}
+.point h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+.point .value {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+.point .align-btn {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+}
+.point .align-btn a {
+    margin-right: 15px;
+}
+.point .align-btn a:nth-child(1) {
+    color: black;
+}
+.point .align-btn a:nth-child(2) {
+    color:rgb(188, 188, 188);
+}
+.point .align-btn a:nth-child(3) {
+    color:rgb(188, 188, 188);
+}
+/* section(table) */
+.point-table {
+    width:100%;
+    margin-top: 1rem;
+}
+.point-table th {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.point-table td {
+    border-bottom: 1px whitesmoke solid;
+    padding: 2em;
+    font-size: 12px;
+}
+.point-table tr td:nth-child(1){
+    text-align: center;
+}
+.point-table tr td:nth-child(2){
+    padding-left: 3em;
+}
+
+/* 최근 본 상품 */
+.view-product {
+    width: calc(1024px - 150px);
+    float: left;
+}
+.view-product img {
+    width: 150px;
+    height: 150px;
+}
+.view-pro-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+.view-pro-container .view-pro-item {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 0 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.view-pro-container .view-pro-item .pro-dsc {
+    text-align: left;
+    padding: 0 21px;
+    margin-top: 7px;
+}
+.view-pro-container .view-pro-item .pro-dsc .company {
+    font-size: 12px;
+}
+.view-pro-container .view-pro-item .pro-dsc .name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+.view-pro-container .view-pro-item .pro-dsc .sale-price {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.view-pro-container .view-pro-item .pro-dsc span {
+    color: orangered;
+    margin-left: 50px;
+}
+.view-pro-container .view-pro-item .pro-dsc .price {
+    color: lightgray;
+    text-decoration: line-through;
+    font-size: 9px;
+    margin-top: 3px;
+    
+}
+/* 주문내역조회 */
+.buyList {
+    width: calc(1024px - 150px);
+    float: left;
+}
+.buyList .header {
+    position: relative;
+}
+.buyList .header a {
+    position: absolute;
+    right: 0px;
+    top: -9px;
+    border: 1px solid lightgray;
+    color: gray;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+}
+.buyList .header a span {
+    padding-left: 4rem;
+}
+.buyList .list_order {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0px;
+}
+.buyList .list_order .date {
+    background-color: white;
+    color: gray;
+    padding: 1em 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.buyList .list_order .order_goods {
+    border: 1px solid lightgray;
+    position: relative;
+}
+.buyList .list_order .order_goods .name {
+    font-size: 20px;
+    font-weight: bold;
+    padding : 1rem;
+}
+.buyList .list_order .order_goods .order_info {
+    background-color: white;
+    margin : 0 1rem;
+    border-top: 1px solid lightgrey;
+    padding : 1rem 0;
+}
+.buyList .list_order .order_goods .order_info::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.buyList .list_order .order_goods .order_info .thumb {
+    float: left;
+}
+
+.buyList .list_order .order_goods .order_info img{
+    width: 100px;
+    height: 100px;
+}
+.buyList .list_order .order_goods .order_info .dsec {
+    float: left;
+    margin-left: 20px;
+    font-size: 12px;
+    width: 50%;
+    margin-top: 8px;
+    
+}
+.buyList .list_order .order_goods .order_info .dsec dd,
+.buyList .list_order .order_goods .order_info .dsec dt {
+    display: inline;
+}
+.buyList .list_order .order_goods .order_info .dsec dd {
+    margin: 0 0 0 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.buyList .list_order .order_goods .order_status {
+    position: absolute;
+    top: 55%;
+    right: 10px;
+    border: 1px solid gray;
+    padding: 8px 32px;
+    margin-right: 10px;
+}
+.buyList .list_order .order_goods .order_status a{
+    color: gray;
+    font-size: 13px;
+}
+
+/* 회원정보 변경 */
+.userModify {
+    width: calc(1024px - 150px);
+    float: left;
+}
+.userModify hr {
+    margin-bottom: 0px;
+}
+.userModify .infoTable {
+    width: 100%;
+}
+.userModify .infoTable tr {
+    border-bottom: 1px solid #e5e5e5;
+}
+.userModify .infoTable th {
+    text-align: left;
+    vertical-align: top;
+}
+.userModify .infoTable .btn-modify-page {
+    background-color: white;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    width: 90px;
+    height: 30px;
+    font-size: 11px;
+    font-weight: normal;
+}
+.userModify .infoTable .input {
+    margin-top: 15px;
+}
+.userModify .infoTable .input > .n-input {
+    width: 240px;
+    height: 32px;
+    padding : 5px 6px;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: "Gulim", "Apple SD Gothic", Auto, sans-serif !important;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.userModify .infoTable .input > label {
+    min-width: 130px;
+    display: inline-block;
+}
+.userModify .infoTable .btn-group {
+    padding: 22px 0 15px 0;
+}
+.userModify .infoTable .n-botton {
+    margin: 0;
+    min-width: 70px;
+    height: 32px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 0 8px 0 8px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.userModify .infoTable .btn-delete {
+    border: 1px solid #f1f1f1;
+    background-color: #f1f1f1;
+    color: black;
+}
+.userModify .infoTable .btn-commit {
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    color: white;
+}
+.userModify .infoTable ul {
+    padding-left: 30px;
+}
+.userModify .infoTable li {
+    color: #777;
+    font-size: 12px;
+    line-height: 2;
+}
+
+/* 펀딩조회 */
+.funding-lookup {
+    width: calc(1024px - 150px);
+    float: left;
+}
+.funding-lookup .summary {
+    width: 100%;
+    font-size: 0;
+}
+.funding-lookup .summary .box {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+    padding: 50px 0px;
+    border: 0.5px solid lightgray;
+}
+.funding-lookup .summary .box .title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.funding-lookup .summary .box .number {
+    color : #50AB6C;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.funding-lookup .btn-group {
+    margin: 15px 0 0 0;
+    padding: 15px 0;
+    border: 1px solid lightgray;
+    background-color: #fcfcfc;
+}
+.funding-lookup .btn-group ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.funding-lookup .btn-group li{
+    list-style: none;
+}
+.funding-lookup .btn-group button {
+    height: 30px;
+    width: 80px;
+    border: 1px solid lightgray;
+    border-left: none;
+    border-radius: 0;
+    color: gray;
+    font-size: 11px;
+}
+.funding-lookup .btn-group li:nth-child(6) button,
+.funding-lookup .btn-group li:nth-child(1) button {
+    border-left: 1px solid lightgray;
+}
+.funding-lookup .btn-group .tern {
+    height: 28px;
+    font-size: 11px;
+    border-radius: none;
+    border: 1px solid lightgray;
+    color:  gray;
+    text-align: center;
+}
+.funding-lookup .btn-group .tern:nth-child(1){
+    margin: 0 10px;
+}
+.funding-lookup .btn-group .btn-total {
+    background-color: #50AB6C;
+    color: white;
+}
+.funding-lookup .state {
+    font-size: 0px;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    margin-bottom: 50px;
+
+}
+.funding-lookup .state li {
+    list-style: none;
+    display: inline-block;
+    width: 33.33333%;
+    font-size: 16px;
+    padding: 20px 0px;
+    text-align: center;
+}
+.funding-lookup .state li .titl {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding: 0;
+}
+.funding-lookup .state li .number {
+    font-size : 25px;
+    font-weight: normal;
+    color: #50AB6C;
+    margin: 0;
+}
+.funding-lookup .container {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.funding-lookup .container .item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.funding-lookup .container .item .progress-box,
+.funding-lookup .container .item .dsec,
+.funding-lookup .container .item .price {
+    padding: 10px;
+}
+.funding-lookup .container .item .progress-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+.funding-lookup .container .item .progress-box label {
+    margin-bottom: 10px;
+    
+}
+.funding-lookup .container .item .progress-box #progress {
+    height: 18px;
+}
+.funding-lookup .container .item .dsec {
+    width: 50%;
+    font-size: 10px;
+    line-height: 1rem;
+    color: gray;
+}
+.funding-lookup .container .item .dsec .titl {
+    font-size: 12px;
+    color: black;
+}
+.funding-lookup .container .item .price {
+    width: 20%;
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ecobean</title>
+<style>
+
+   /* 화면 전체 여백 제거 */
+   body { 
+      margin:0px;
+      padding:0px;
+   }
+   /* 페이지 규격 */
+   .wrapper {
+      width:1024px;
+      height : 1500px; 
+      background-color:white;
+      margin:0 auto;
+      
+   }
+   /* 헤더(상단 메뉴바까지) */
+   .main_header {
+      position:absolute;
+      display:block;
+      height:100px;
+      width:1024px;
+   }   
+   /* 왼쪽 상단 메인 로고 위치 지정 */
+   #main_logo {
+      position:absolute;
+   }
+   /* 왼쪽 상단 메인 로고 크기, 위치 */
+   #main_logo img {
+      width:210px;
+      height:70px;
+      margin-top:30px;
+      margin-left:20px;
+   }
+   /* 상단바 크기, 위치, 색 */
+   #menubar {
+      position:absolute;
+      margin-top:48px;
+      margin-left:240px;
+      width:750px;
+      height:30px;
+      border-top-width:2px;
+      border-top-color:#15AD65;
+      border-top-style:solid;
+      border-bottom-width:2px;
+      border-bottom-color:#15AD65;
+      border-bottom-style:solid;
+   }
+   /* 상단바 메뉴 크기, 위치, 색*/
+   #menubar ul{
+      display:inline-block;
+      margin:0px;
+      padding:0px;
+      width:400px;
+   }
+   #menubar ul li{
+      display:inline-block;
+      list-style:none;
+      padding:0px 44px;
+      line-height:28px;
+   }
+   #menubar ul li a{
+      text-decoration:none;
+      font-size:12px;
+      font-weight:bold;
+      color:black;
+   }
+   /* 메뉴 링크 클릭 후 색 지정 */
+   #menubar ul li a:visited{
+      color:black;
+   }
+   /* 메뉴바 검색창 */
+   #menubar #menu_search{
+      display:inline-block;
+      padding-left:20px;
+   }
+   #menu_search input[type=text]{
+      border:1px solid #C3C3C3;
+      border-radius:5px;
+   }
+   #menu_search input[type=button] {
+      border: 1px solid gray;
+      border-radius:5px;
+      background-color:#15AD65;
+      color:white;
+      border-color:#15AD65;
+   }   
+   /* 오른쪽 상단 로그인, 회원가입 */
+   #top_logjoin {
+      position:absolute;
+      display:inline-block;
+      right:0px;
+      top:0px;
+      width:180px;
+   }
+   #top_logjoin li {
+      display:inline-block;
+      list-style-type:none;
+      padding:0px 10px;
+   }
+   #top_logjoin a {
+      color:black;
+      text-decoration:none;
+      font-size:12px;
+   }
+   /* 메뉴 링크 클릭 후 색 지정 */
+   #top_logjoin a:visited {
+      color:black;
+   }         
+   
+   /* 공지 테이블 제목 */
+   #title {
+      position:absolute;
+      margin-top:200px;
+      margin-left:40px;
+      width:950px;
+      height:10px;
+      border:2px solid #15AD65;
+      border-collapse : collapse;
+   }
+   
+   #title th{
+   	background : #15AD65;
+   	color : #fff;   	
+   }
+
+	#ntc_img{
+	  position:absolute;
+	  margin-top:400px;
+	  margin-left : 112px;
+	  width : 800px;	  	  
+	}
+	
+	#title td{
+	  padding : 10px;
+	  border-top : 2px solid #15AD65;
+	}
+   /* 하단사이트정보 배경색*/
+   .footer{
+      width : 100%;
+      height:300px;
+      background : #f2f2f2; 
+      margin-top : auto;
+   }
+   /* 하단사이트정보 테이블 */
+   .site_info{
+      width : 1024px;
+      height : 200px;     
+      padding : 40px;
+      margin : 0 auto;      
+   }
+   .page {
+      display: flex;
+      flex-direction: column;
+   }
+   
+</style>
+</head>
+<body>
+   <div class="page">
+   
+      <div class="wrapper">
+           <!-- 헤더 -->
+         <div class="main_header">
+             <div id="main_logo">
+               <a href="#"><img src="img/ecobean_main_logo.png"></a>
+            </div>
+            
+            <nav id="menubar">
+               <ul>
+                  <li><a href="corp.html">기업소개</a></li>
+                  <li><a href="#">상품정보</a></li>
+                  <li><a href="#">펀딩</a></li>      
+               </ul>
+               <form id="menu_search">
+                  <input type="text" placeholder="Search" size="30px">               
+                  <input type="button" value="Search">
+               </form>
+            </nav>
+            
+            <ul id="top_logjoin">
+               <li><a href="#">마이페이지</a></li>
+               <li><a href="#">로그아웃</a></li>
+            </ul>
+         </div>
+          
+      <table id="title">
+      <col width="20%"><col width="80%">
+      	<tr><th>제목</th><td>에코빈 홈페이지 오픈 공지</td></tr>
+      	<tr><th border-top="white">작성일</th><td>2021-01-21</td></tr>
+      </table>
+     	
+     	<!-- 공지 본문 이미지 -->
+       <img id="ntc_img" src="img/notice_1.png">   
+          
+       </div>   
+      <!-- 하단사이트정보 -->
+       <div class = "footer">
+         <table class="site_info">
+            <tr>
+               <td>
+                  CS CENTER <br><br>
+                  평일 10:10 - 19:00 (점심시간 13:00 ~ 14:00)<br>
+                  주말 및 공휴일 휴무<br><br>
+                  <a href="notice.html">공지사항</a>
+                  <a href="Q&A_admin.html">Q&A</a>
+               </td>
+               <td>
+                  STORE <b>에코빈</b><br>
+                  단체주문/제휴문의 <b>ecobean@naver.com</b><br>
+                  입점문의 <b>ecobean@naver.com</b><br>
+                  TEL <b>0507-1316-4635</b><br>
+                  - <br>
+                  OWNER <b>왕성택</b><br>
+                  COMPANY REG.NO <b>123-45-67890</b><br>
+                  ADDRESS <b>서울특별시 강남구 테헤란로 132<br>
+                  한독약품빌딩 8층 쌍용교육센터</b><br>
+                  Copyright ⓒ에코빈 Inc. All rights reserved.
+               </td>
+            </tr>
+         </table>
+      </div>
+      
+   </div>    
+</body>

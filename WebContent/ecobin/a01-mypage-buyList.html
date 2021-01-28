@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지 | 주문내역</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="b03-style-mypage.css">
+    <link rel="stylesheet" href="b02-style-default.css">
+    <link rel="stylesheet" href="b01-style-main.css">
+</head>
+    <body>
+        <div class="wrapper">
+            <!-- header -->
+            <div class="wrapper-header">
+                <div class="main_header">
+                    <div id="main_logo">
+                    <a href="main.html"><img src="img/ecobean_main_logo.png"></a>
+                    </div>
+                
+                    <nav id="menubar">
+                        <ul>
+                            <li><a href="corp.html">기업소개</a></li>
+                            <li><a href="product_main.html">상품정보</a></li>
+                            <li><a href="funding_main_Total.html">펀딩</a></li>      
+                        </ul>
+                    <form id="menu_search">
+                        <input type="text" placeholder="Search" size="30px">               
+                        <input type="button" value="Search">
+                    </form>
+                    </nav>
+                
+                    <ul id="top_logjoin">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- my-info -->
+            <div class="mypage">
+                <h1 class="my-info-titl"><a href="a01-mypage-buyList.html">My Page</a></h1>
+                <div class="my-info-box">
+                    <figure class="my-img" style="background-image:url(img/logo_w.png)">
+                        <img src="img/logo_w.png">
+                    </figure>
+                    <div class="my-info-dsec">
+                        <h1 class="my-name">왕성택</h1>
+                        <a class="link-modify" href="a06-mypage-modify.html">회원정보변경</a>
+                        <p class="joind">가입일 : 2020.11.15</p>
+                    </div>
+                    <ul class="my-menu-list">
+                        <a href="a05-mypage-point.html">
+                            <li class="my-menu-item">
+                                <i class="fab fa-product-hunt"></i>
+                                <div>포인트 &gt;</div>
+                                <strong>6,100</strong>
+                            </li>
+                        </a>
+                        <a href="a02-mypage-basket.html">
+                            <li class="my-menu-item">
+                                <i class="fas fa-shopping-basket"></i>
+                                <div>장바구니 &gt;</div>
+                                <strong>1</strong>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- nav -->
+                <nav class="nav">
+                    <dl class="nav-list">
+                        <dh class="titl">쇼핑관리</dh>
+                        <dd class="nav-item"><a href="a01-mypage-buyList.html">주문내역</a></dd>
+                        <dd class="nav-item"><a href="a03-mypage-viewProduct.html">최근 본 상품</a></dd>
+                        <dd class="nav-item"><a href="a02-mypage-basket.html">장바구니</a></dd>
+                        <dh class="titl">펀딩내역</dh>
+                        <dd class="nav-item"><a href="a04-mypage-funding.html">투자내역</a></dd>
+                        <dh class="titl">고객센터</dh>
+                        <dd class="nav-item"><a href="#">1:1문의</a></dd>
+                    </dl>
+                </nav>
+                <!-- 주문내역 조회 -->
+                <section class="buyList">
+                    <header class="header">
+                        <h1>주문내역 조회</h1>
+                        <a href="#">전체기간<span>∇</span></a>
+                    </header>
+                    <hr>
+                    <ul class="list_order">
+                        <li>
+                            <div class="date">2020.03.23 (17시 05분)</div>
+                            <div class="order_goods">
+                                <div class="name">친환경 우유 900ml 외 2건</div>
+                                <div class="order_info">
+                                    <div class="thumb">
+                                        <img src="img/03-pro.png">
+                                    </div>
+                                    <div class="dsec">
+                                        <dl>
+                                            <dt>주문번호</dt>
+                                            <dd>354435234</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>결제금액</dt>
+                                            <dd>10,500원</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>주문상태</dt>
+                                            <dd>배송완료</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="order_status">
+                                    <a href="#">문의하기</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">2021.01.07 (17시 07분)</div>
+                            <div class="order_goods">
+                                <div class="name">친환경 우유 900ml 외 2건</div>
+                                <div class="order_info">
+                                    <div class="thumb">
+                                        <img src="img/04-pro.png">
+                                    </div>
+                                    <div class="dsec">
+                                        <dl>
+                                            <dt>주문번호</dt>
+                                            <dd>7777777</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>결제금액</dt>
+                                            <dd>17,700원</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>주문상태</dt>
+                                            <dd>배송완료</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="order_status">
+                                    <a href="#">문의하기</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section> <!-- 주문내역 조회 --> 
+            </div> <!-- myInfo --> 
+        </div> <!-- wrapper -->
+        <!-- <script>
+            var dates = 
+            ["2020.01.10 (19시 15분)", "2019.03.20(20시01분)", "2021.01.22(14시30분)",
+             "2020.03.03 (16시09분)", "2021.01.01 (12시09분)", "2020.12.08 (15시40분)"];
+            var names = 
+            ["친환경 두부 외 3건", "친환경 계란 외 3건", "친환경 채소 외 3건",
+            "친환경 과일 외 3건", "친환경 치약 외 3건", "친환경 쥬스 외 3건"];
+            var orderNo = 
+            ["11111111", "22222222", "33333333",
+            "4444444", "55555555", "66666666"];
+            var price = 
+            ["11,111원", "22,222원", "33,333원",
+            "44,444원", "55,555원", "66,666원"];
+            var status = 
+            ["배송완료", "배송중", "결재완료",
+            "배송완료", "배송완료", "배송중"];
+            var imgs = 
+            ["03-pro.png", "04-pro.png", "05-pro.png",
+            "06-pro.png", "07-pro.png", "08-pro.png"];
+
+            console.log(document.querySelector(".test a").innerHTML);
+            console.log(document.querySelector(".test span").innerHTML);
+            for(var idx=0; idx<dates.length; idx++) {
+                document.querySelector(".list_order").innerHTML += 
+                '<li><div class="date">'+dates[idx]+'</div><div lass="order_goods">            <div class="name">'+names[idx]+'</div><div class="order_info"><div class="thumb"><img src="img/'+imgs[idx]+'"></div><div class="dsec"><dl><dt>주문번호</dt><dd>'+orderNo[idx]+'</dd></dl><dl><dt>결제금액</dt><dd>'+price[idx]+'</dd></dl><dl><dt>주문상태</dt><dd>'+status[idx]+'</dd></dl></div></div><div class="order_status"><a href="#">문의하기</a></div></div></li>'
+            }
+        </script> -->
+                <!-- 하단사이트정보 -->
+        <div class = "footer">
+            <table class="site_info">
+                <tr>
+                    <td>
+                        CS CENTER <br><br>
+                        평일 10:10 - 19:00 (점심시간 13:00 ~ 14:00)<br>
+                        주말 및 공휴일 휴무<br><br>
+                        <a href="">공지사항</a>
+                        <a href="">Q&A</a>
+                    </td>
+                    <td>
+                        STORE <b>에코빈</b><br>
+                        단체주문/제휴문의 <b>ecobean@naver.com</b><br>
+                        입점문의 <b>ecobean@naver.com</b><br>
+                        TEL <b>0507-1316-4635</b><br>
+                        - <br>
+                        OWNER <b>왕성택</b><br>
+                        COMPANY REG.NO <b>123-45-67890</b><br>
+                        ADDRESS <b>서울특별시 강남구 테헤란로 132<br>
+                        한독약품빌딩 8층 쌍용교육센터</b><br>
+                        Copyright ⓒ에코빈 Inc. All rights reserved.
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+.mypage table {
+	border-collapse: collapse;
+}
+.mypage tr {
+	font-size: 0.8rem;
+}
+.mypage th {
+	font-size: 0.8rem;
+    font-weight: normal;
+    padding: 1em;
+}
+.mypage a {
+	text-decoration: none;
+}
+.mypage hr {
+	border: 1px solid black;
+	margin-bottom: 1rem;
+}

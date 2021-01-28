@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+    }
+    textarea {
+      resize: none;
+    }
+    th {
+      width: 15%;
+    }
+    h1 {
+      background-color: #aeccbe;
+      color: whitesmoke;
+      padding: 7px 0;
+      margin-top: 0;
+    }
+  </style>
+  <body>
+    <form>
+      <h1 align="center">리뷰작성</h1>
+      <src img=""></src>
+      <h2 align="center">[PENDUKA] hugme mini</h2>
+
+      <table align="center">
+        <tr>
+          <th>작성자</th>
+          <td>
+            <input
+              type="text"
+              name="writer"
+              placeholder="이름을 입력해주세요"
+              size="70"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>평가</th>
+          <td>
+            <input type="radio" name="star" value="5" />★★★★★
+            <input type="radio" name="star" value="4" />★★★★☆
+            <input type="radio" name="star" value="3" />★★★☆☆
+            <input type="radio" name="star" value="2" />★★☆☆☆
+            <input type="radio" name="star" value="1" />★☆☆☆☆
+          </td>
+        </tr>
+
+        <tr>
+          <th>제목</th>
+          <td>
+            <input
+              type="text"
+              name="title"
+              placeholder="제목을 입력해주세요"
+              size="70"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>내용</th>
+          <td>
+            <textarea
+              rows="30"
+              cols="72"
+              placeholder="내용을 입력해주세요"
+            ></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <th>이미지 첨부</th>
+          <td>
+            <input type="file" />
+          </td>
+        </tr>
+      </table>
+      <br />
+      <div class="div" align="center">
+        <input type="submit" value="취소" />
+        <input
+          type="submit"
+          value="등록"
+          style="background-color: #aeccbe; color: white"
+        />
+      </div>
+    </form>
+  </body>
+</html>

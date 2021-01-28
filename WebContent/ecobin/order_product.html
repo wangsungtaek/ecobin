@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>상품 주문 | 에코빈</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .wrapper {
+        height: 1800px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="wrapper">
+        <!-- 헤더 -->
+        <div class="main_header">
+          <div id="main_logo">
+            <a href="#"><img src="img/ecobean_main_logo.png" /></a>
+          </div>
+          <nav id="menubar">
+            <ul>
+              <li><a href="#">기업소개</a></li>
+              <li><a href="#">상품정보</a></li>
+              <li><a href="#">펀딩</a></li>
+            </ul>
+            <form id="menu_search">
+              <input type="text" placeholder="Search" size="30px" />
+              <input type="button" value="Search" />
+            </form>
+          </nav>
+          <ul id="top_logjoin">
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">로그아웃</a></li>
+          </ul>
+        </div>
+        <!-- .main_header -->
+
+        <!-- 배너이미지 
+        <img src="img/img_temp.png" class = "banner">-->
+        <!-- ##### 여기에 코드 작성 #####-->
+        <div class="content">
+          <div class="content_wrap">
+            <section class="productbuy_section_title">
+              <h2>상품 주문</h2>
+            </section>
+            <section class="buyappl_section">
+              <h3>주문 상품 정보</h3>
+              <ul>
+                <li>
+                  <strong class="productbuy_name">할로윈 컵슬리브</strong>
+                  <span class="productbuy_cnt">2개 | 23,000원</span>
+                </li>
+                <li class="productbuy_lastli">
+                  <strong class="productbuy_name">배송비</strong>
+                  <span>2,500원</span>
+                </li>
+              </ul>
+
+              <div class="productbuy_tot">
+                <span>총 2개 | 총 25,500원</span>
+              </div>
+            </section>
+            <section class="buyappl_section">
+              <h3>포인트 사용</h3>
+              <ul>
+                <li>보유중인 포인트 <span>5000 P</span></li>
+                <li class="productbuy_lastli">
+                  <label for="point_use">사용 할 포인트 </label
+                  ><input
+                    type="text"
+                    name="point_use"
+                    placeholder="0"
+                    class="point_text"
+                  />
+                  P
+                </li>
+              </ul>
+              <div class="productbuy_tot">
+                <span>결제금액　25,500원</span>
+              </div>
+            </section>
+            <section class="buyappl_section">
+              <h3>배송 정보</h3>
+              <div class="shipping_choice">
+                <input
+                  type="radio"
+                  name="shipping"
+                  id="default_address"
+                  checked
+                />
+                <label for="default_address">기본 배송지</label>
+                <input type="radio" name="shipping" id="new_address" />
+                <label for="new_address">직접 입력</label>
+              </div>
+              <table class="shipping_address">
+                <colgroup>
+                  <col width="150px" />
+                  <col width="auto" />
+                </colgroup>
+                <tr>
+                  <th>이름</th>
+                  <td>홍모모</td>
+                </tr>
+                <tr>
+                  <th>연락처</th>
+                  <td>010-5555-5555</td>
+                </tr>
+                <tr>
+                  <th>주소</th>
+                  <td>수원 매탄동</td>
+                </tr>
+                <tr>
+                  <th><label for="shipping_message">배송메시지</label></th>
+                  <td>
+                    <textarea
+                      name="shipping_message"
+                      rows="5"
+                      cols="55"
+                    ></textarea>
+                  </td>
+                </tr>
+              </table>
+            </section>
+            <section class="buyappl_section">
+              <h3>결제 수단</h3>
+              <ul class="productbuy_left">
+                <li>
+                  <input type="radio" name="pay_method" id="creditcard" />
+                  <label for="creditcard">신용카드</label>
+                </li>
+                <li>
+                  <input type="radio" name="pay_method" id="banktransfer" />
+                  <label for="banktransfer">무통장입금</label>
+                </li>
+              </ul>
+            </section>
+            <section class="buyappl_section">
+              <h3>약관 동의</h3>
+              <div class="productbuy_agree">
+                <input type="checkbox" id="buyagree" />
+                <label for="buyagree"
+                  >위 상품의 구매조건 확인 및 결제진행 동의</label
+                >
+              </div>
+            </section>
+            <button type="submit" class="productbuy_botton" onclick="location.href='complete_product.html'">
+              결제하기</>
+            </button>
+          </div>
+        </div>
+        <!--.content-->
+      </div>
+      <!-- .wrapper-->
+
+      <!-- 하단사이트정보 -->
+      <div class="footer">
+        <table class="site_info">
+          <tr>
+            <td>
+              CS CENTER <br /><br />
+              평일 10:10 - 19:00 (점심시간 13:00 ~ 14:00)<br />
+              주말 및 공휴일 휴무<br /><br />
+              <a href="">공지사항</a>
+              <a href="">Q&A</a>
+            </td>
+            <td>
+              STORE <b>에코빈</b><br />
+              단체주문/제휴문의 <b>ecobean@naver.com</b><br />
+              입점문의 <b>ecobean@naver.com</b><br />
+              TEL <b>0507-1316-4635</b><br />
+              - <br />
+              OWNER <b>왕성택</b><br />
+              COMPANY REG.NO <b>123-45-67890</b><br />
+              ADDRESS
+              <b
+                >서울특별시 강남구 테헤란로 132<br />
+                한독약품빌딩 8층 쌍용교육센터</b
+              ><br />
+              Copyright ⓒ에코빈 Inc. All rights reserved.
+            </td>
+          </tr>
+        </table>
+        <!--.site_info-->
+      </div>
+      <!--.footer-->
+    </div>
+    <!--.page-->
+  </body>
+</html>

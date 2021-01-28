@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <title>회원 수정 page</title>
+    <style>
+        .main_logo_img{
+            width:210px;
+            height:70px;   
+        }
+        .list-group{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .footer{
+        /* position : absolute;
+         top:1800px; */
+        width : 100%;
+        height:300px;
+        background : #f2f2f2; 
+        margin :0 auto;
+        }   
+        /* 하단사이트정보 테이블 */
+        .site_info{
+        width : 50%;
+        height : 200px;     
+        padding : 40px;
+        margin : 0 auto;      
+        }
+        .btn{
+            font-size: 10pt;
+        }
+        section{
+            font-size: 7pt;
+        }
+        table tr td{
+            margin-right: -500px;
+        }
+    </style>
+    
+    </head>
+    <body>
+        <main class="container-fluid" style="width: 75%;">
+        <!--플랫폼 최상단-->
+        <header class="row">
+            <div class="col">
+                <div class="row"></div>
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <a href="#">
+                            <img src="./ecobean_main_logo.png" class="main_logo_img">
+                        </a>
+                    </div>
+                    <div class="col" style="border-top: 2px solid #15AD65; border-bottom: 2px solid #15AD65;">
+                        <div class="row" style= "height: 60%; margin-top: 15px; ">
+                            <div class="col-2">
+                                <a href="#">
+                                    <button type="button" class="btn btn-outline-success" style="width: 100px; height: 100%;">기업소개</button>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <a href="#">
+                                    <button type="button" class="btn btn-outline-success" style="width: 100px;  height: 100%;">제품</button>
+                                </a>
+                            </div>
+                            <div class="col-2">
+                                <a href="#">
+                                    <button type="button" class="btn btn-outline-success" style="width: 100px;  height: 100%;">펀딩</button>
+                                </a>
+                            </div>
+                            <div class="col-5">
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                            <div class="col-1">
+                                <form>
+                                    <a href="#">
+                                    <button type="button" class="btn btn-outline-success btn-sm" >logout</button>
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">　</div>
+            </div>
+        </header>
+        <!--배너같은 곳-->
+        <aside class="row">
+            <div class="col" style="background-color: #15AD65; color: white;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-3">
+                        <p class="bi bi-person-circle" style="font-size:7em; text-align: center;" ></p>
+                        <h3 style="text-align: center;">관리자</h3>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-6"">
+                        <div class="row mt-5"></div>
+                        <div class="row" style="margin-top: 25px;">
+                            <div class="col-4" style="text-align: center;">
+                                <p class="bi bi-wallet2" style="font-size: 2em;"></p>
+                                <h6>포인트</h6>
+                                <p>10000원</p>
+                            </div>
+                            <div class="col-4" style="text-align: center;">
+                                <p class="bi bi-cart4" style="font-size: 2em;"></p>
+                                <h6>장바구니</h6>
+                                <p>N개</p>
+                            </div>
+                        </div>
+                        <div class="row mt-5"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!--메인화면-->
+        <article class="row" >
+            <div class="col">
+                <div class="row">
+                    <!-- 메뉴 바 -->
+                    <nav class="col-3" style="text-align: center; border-left: 2px solid #15AD65;">
+                        <div class="list-group">
+                            <button type="button" class="btn btn-success">회원관리</button>
+                            <a href="User_manage.html" class="btn btn-outline-success">회원관리 및 수정</a>
+                        </div>
+                        <div class="list-group">
+                            <button type="button" class="btn btn-success">상품 관리</button>
+                            <a href="Product_Regist.html" class="btn btn-outline-success">상품 등록</a>
+                            <a href="Product_manage.html" class="btn btn-outline-success">상품 수정 및 삭제</a>
+                        </div>
+                        <div class="list-group">
+                            <button type="button" class="btn btn-success">펀딩 관리</button>
+                            <a href="Funding_Regist.html" class="btn btn-outline-success">펀딩 등록</a>
+                            <a href="Funding_manage.html" class="btn btn-outline-success">펀딩 수정 및 삭제</a>
+                        </div>
+                        <div class="list-group">
+                            <button type="button" class="btn btn-success">기업 관리</button>
+                            <a href="Company_Regist.html" class="btn btn-outline-success">기업 등록</a>
+                            <a href="Company_manage.html" class="btn btn-outline-success">기업 수정 및 삭제</a>
+                        </div>
+                        <div class="list-group">
+                            <button type="button" class="btn btn-success">고객센터 관리</button>
+                            <a href="Notice_Regist.html" class="btn btn-outline-success">공지사항 등록</a>
+                            <a href="Notice_manage.html" class="btn btn-outline-success">공지사항 수정 및 삭제</a>
+                            <a href="FrequencyQ&A_Regist.html" class="btn btn-outline-success">자주 묻는 질문 등록</a>
+                            <a href="FrequencyQ&A_manage.html" class="btn btn-outline-success">자주 묻는 질문 수정 및 삭제</a>
+                            <a href="Q&A_manage.html" class="btn btn-outline-success">Q&A 답변 및 삭제</a>
+                        </div>
+                    </nav>
+                    <!--내용 들어갈 곳-->
+                    <section class="col-9" style="border-right: 2px solid #15AD65;" >
+                        <div class="row mt-4">
+                            <div class="col">
+                                <h3>회원 수정</h3><hr>       
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="button" class="btn btn-outline-secondary" value="no" disabled style="width: 5%;"></input>
+                                <input type="button" class="btn btn-outline-secondary" value="주소" disabled style="width: 24%;"></input>
+                                <input type="button" class="btn btn-outline-secondary" value="이메일" disabled style="width: 12%;"></input>
+                                <input type="button" class="btn btn-outline-secondary" value="휴대폰" disabled style="width: 13%;"></input>
+                                <input type="button" class="btn btn-outline-secondary" value="비밀번호" disabled style="width: 9%;"></input>
+                                <input type="button" class="btn btn-outline-secondary" value="아이디" disabled style="width: 10%;"></input>
+                                <input type="button" class="btn btn-outline-secondary" value="이름" disabled style="width: 10%;"></input>
+                            </div>
+                            
+                            
+                        </div> 
+                        <div class="row">
+                            <div class="col">
+                                <hr>
+                            </div>
+                        </div>
+                        <!--핵심 내용들-->
+                        <div class="row"> 
+                            <div class="col">
+                                <form>
+                                    <table>
+                                        <tr>
+                                            <td style="width: 5%;">
+                                                <input type="text" class="btn btn-outline-success" value="1"style="width: 100%;"></input>
+                                            </td>
+                                            <td style="width: 25%;">
+                                                <input type="text" class="btn btn-outline-success" value="기존데이터"style="width: 100%;"></input>
+                                            </td>
+                                            <td style="width: 12%;">
+                                                <input type="text" class="btn btn-outline-success" value="기존데이터"style="width: 100%;"></input>
+                                            </td>
+                                            <td style="width: 13%">
+                                                <input type="text" class="btn btn-outline-success" value="기존데이터"style="width: 100%;"></input>
+                                            </td>
+                                            <td style="width: 10%;">
+                                                <input type="text" class="btn btn-outline-success" value="기존데이터"style="width: 100%;"></input>
+                                            </td>
+                                            <td style="width: 10%;">
+                                                <input type="text" class="btn btn-outline-success" value="기존데이터"style="width: 100%;"></input>
+                                            </td>
+                                            <td style="width: 11%;">
+                                                <input type="text" class="btn btn-outline-success" value="기존데이터"style="width: 100%;"></input>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-success" type="submit">등록</button>
+                                                <a href="User_manage.html">
+                                                    <input type="button" class="btn btn-success" value="취소"></input>
+                                                </a>
+                                            </td>
+                                            
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>    
+                        </div>
+                        
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="container-fluid">
+        <div class = "footer" style="padding-top: 30px;">
+            <table class="site_info" >
+            <tr>
+                <td>
+                    CS CENTER <br><br>
+                    평일 10:10 - 19:00 (점심시간 13:00 ~ 14:00)<br>
+                    주말 및 공휴일 휴무<br><br>
+                    <a href="">공지사항</a>
+                    <a href="">Q&A</a>
+                </td>
+                <td>
+                    STORE <b>에코빈</b><br>
+                    단체주문/제휴문의 <b>ecobean@naver.com</b><br>
+                    입점문의 <b>ecobean@naver.com</b><br>
+                    TEL <b>0507-1316-4635</b><br>
+                    - <br>
+                    OWNER <b>이재완</b><br>
+                    COMPANY REG.NO <b>123-45-67890</b><br>
+                    ADDRESS <b>서울특별시 강남구 테헤란로 132<br>
+                    한독약품빌딩 8층 쌍용교육센터</b><br>
+                    Copyright ⓒ에코빈 Inc. All rights reserved.
+                </td>
+            </tr>
+            </table>
+        </div>
+    </footer>
+</body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</html>

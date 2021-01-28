@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ecobean</title>
+<style>
+
+   /* 화면 전체 여백 제거 */
+   body { 
+      margin:0px;
+      padding:0px;
+   }
+   /* 페이지 규격 */
+   .wrapper {
+      width:1024px;
+      height : 3000px; /* 페이지 길이에 맞게 수치 조정해주세요 */
+      background-color:white;
+      margin:0 auto;
+      
+   }
+   /* 헤더(상단 메뉴바까지) */
+   .main_header {
+      position:absolute;
+      display:block;
+      height:100px;
+      width:1024px;
+   }   
+   /* 왼쪽 상단 메인 로고 위치 지정 */
+   #main_logo {
+      position:absolute;
+   }
+   /* 왼쪽 상단 메인 로고 크기, 위치 */
+   #main_logo img {
+      width:210px;
+      height:70px;
+      margin-top:30px;
+      margin-left:20px;
+   }
+   /* 상단바 크기, 위치, 색 */
+   #menubar {
+      position:absolute;
+      margin-top:48px;
+      margin-left:240px;
+      width:750px;
+      height:30px;
+      border-top-width:2px;
+      border-top-color:#15AD65;
+      border-top-style:solid;
+      border-bottom-width:2px;
+      border-bottom-color:#15AD65;
+      border-bottom-style:solid;
+   }
+   /* 상단바 메뉴 크기, 위치, 색*/
+   #menubar ul{
+      display:inline-block;
+      margin:0px;
+      padding:0px;
+      width:400px;
+   }
+   #menubar ul li{
+      display:inline-block;
+      list-style:none;
+      padding:0px 44px;
+      line-height:28px;
+   }
+   #menubar ul li a{
+      text-decoration:none;
+      font-size:12px;
+      font-weight:bold;
+      color:black;
+   }
+   /* 메뉴 링크 클릭 후 색 지정 */
+   #menubar ul li a:visited{
+      color:black;
+   }
+   /* 메뉴바 검색창 */
+   #menubar #menu_search{
+      display:inline-block;
+      padding-left:20px;
+   }
+   #menu_search input[type=text]{
+      border:1px solid #C3C3C3;
+      border-radius:5px;
+   }
+   #menu_search input[type=button] {
+      border: 1px solid gray;
+      border-radius:5px;
+      background-color:#15AD65;
+      color:white;
+      border-color:#15AD65;
+   }   
+   /* 오른쪽 상단 로그인, 회원가입 */
+   #top_logjoin {
+      position:absolute;
+      display:inline-block;
+      right:0px;
+      top:0px;
+      width:180px;
+   }
+   #top_logjoin li {
+      display:inline-block;
+      list-style-type:none;
+      padding:0px 10px;
+   }
+   #top_logjoin a {
+      color:black;
+      text-decoration:none;
+      font-size:12px;
+   }
+   /* 메뉴 링크 클릭 후 색 지정 */
+   #top_logjoin a:visited {
+      color:black;
+   }       
+   
+   /* 배너 이미지 
+   .banner{
+      width : 1024px;
+      height : 270px;
+      position : absolute;
+      top : 120px;
+   }
+   */
+   
+   /*버튼 색깔 설정*/
+   input[type="button"]{
+   background:#aeccbe;
+   }
+
+   
+   /*펀딩 상세정보 시작*/
+   
+   .detail{
+   width:1024px;
+   position:absolute;
+   top:150px;
+   }
+   
+   /*상세정보 상단*/
+   .detailUp{
+   height:700px;
+   }
+   
+   
+   /*펀딩 상세정보 사진*/
+   .detailPic{
+     width : 500px;
+     height : 600px;
+     float: left;
+    
+     }
+      
+    /*펀딩 상세정보*/
+    .detailDes{
+    width:500px;
+    height:600px;
+    float:right;
+    }
+    
+    /*상세정보 가운데 줄 생성*/
+    .detailDes2{
+    width:500px;
+    height:450px;
+    float:right;
+    border-bottom: 1px solid;
+     }
+   
+    /*상세정보 가운데 줄 생성*/
+    .detailDes3{
+      width:500px;
+      height:200px;
+      float:right;
+       }
+   
+    /*박스!!*/
+    .box{
+    width:200px;
+    height:800px;
+    float:right;
+    background-color:#aeccbe;
+    border-radius:20px;
+   
+    }
+    
+    
+    /*
+    상품 상세 탭(계속 있는 것) - js 때 필요한 것 같음 
+    .tap{
+    width:1024px;
+    height:50px;
+    position:absolute;
+    top:500px;
+    background-color:#15AD65
+    }
+      */
+      
+   /*펀딩 상세 밑부분*/
+   .detailDown{
+   width:1024px;
+   height:1000px;
+   position:absolute;
+    }
+   
+   
+  /*상세정보2 입력하는 것*/
+  .moredetail{
+     width : 500px;
+     height:400px;
+     position : absolute;
+    
+     float:left;
+     }
+
+   /*리뷰테이블*/
+    .revTable {
+     
+      width : 1024px;
+      height:460px;
+      position:absolute;
+      top: 2300px;
+      text-align:center;
+      
+     }
+      
+   
+   /*QnA테이블
+   
+   .qnaTable{
+    width:1024px;
+    height:270px;
+    position:absolute;
+    top:1700px;
+    text-align:center;
+    }
+    
+   /*guide부분
+   .guide{
+   width:1024px;
+   height:270px;
+   position:absolute;
+   top:2050px;
+   }
+   */  
+  
+   /* 하단사이트정보 배경색*/
+   .footer{
+     /*
+      position : absolute;
+      top:2270px;*/
+      width : 100%;
+      height:300px;
+      background : #f2f2f2; 
+      margin-top : auto;
+   }
+   /* 하단사이트정보 테이블 */
+   .site_info{
+      width : 1024px;
+      height : 200px;     
+      padding : 40px;
+      margin : 0 auto;      
+   }
+   .page {
+      display: flex;
+      flex-direction: column;
+   }
+   
+   
+ /* 
+ .content {
+     position:absolute;
+     top:120px;
+     width:1024px;
+     margin:0 auto;
+     
+      }
+      */
+   
+   
+</style>
+</head>
+<body>
+   <div class="page">
+   
+      <div class="wrapper">
+           <!-- 헤더 -->
+         <div class="main_header">
+             <div id="main_logo">
+               <a href="#"><img src="img/ecobean_main_logo.png"></a>
+            </div>
+            
+            <nav id="menubar">
+               <ul>
+                  <li><a href="#">기업소개</a></li>
+                  <li><a href="product_main.html">상품정보</a></li>
+                  <li><a href="funding_main_Total.html">펀딩</a></li>    
+               </ul>
+               <form id="menu_search">
+                  <input type="text" placeholder="Search" size="30px">               
+                  <input type="button" value="Search">
+               </form>
+            </nav>
+            
+            <ul id="top_logjoin">
+               <li><a href="#">마이페이지</a></li>
+               <li><a href="#">로그아웃</a></li>
+            </ul>
+         </div>
+         
+      <!-- 배너이미지
+          <img src="img/img_temp.png" class = "banner">
+         -->
+          
+     <!-- ##### 여기에 코드 작성 #####--> 
+     
+     <!-- 상품 상세정보 시작, 사진부터 -->
+      
+   
+     <div class = "detail">   
+      
+      <div class="detailUp">
+      <div class="detailPic">
+      <img src="img/fun01.jpg" height="500" width="500">
+     </div>
+     
+     <!-- 상품 상세정보 설명, 버튼 -->
+       <div class="detailDes">
+        <div class="detailDes2"> <!-- 가운데 줄 생성 -->
+        <h5>D-26</h5>
+        <h1>고체치약과 대나무 칫솔로 친환경 실천!</h1>
+        <h3>금액달성율50%</h3>
+         <input type="range" min="10" max="90" step="0.5"  list = "temperatures" style="width:100%">
+     
+     
+      <datalist id="data">
+        <option value="10" label="Low">
+        <option value="50" label="Middle">
+        <option value="90" label="High">
+      </datalist><br>
+     
+       <h3>2,000,000원 목표<br>
+        총 참여금액 : 1,000,000원</h3>
+      
+       <h5>펀딩 주최 기업</h5>
+       <h3>피스온테이블<br>
+       낭비없는 소비를 실천하는 당신과 함께합니다.</h3>
+     
+         </div> <!-- detailDes2 -->
+        
+        <div class="detailDes3">
+       <form>
+          <select name="optionselect" style="width:30%">
+            <option value="1" selected>리워드 선택</option>
+            <option value="2">세트(대나무칫솔+고체치약)</option>
+            <option value="3">대나무 칫솔</option>
+            
+     
+           </select><br>
+           <p>수량 선택</p>
+           <input type="number" placeholder="1" min="1" max="10"  step="1" style="width:30%"><br><br>
+      
+       </form>
+     
+     
+     <a href="funding_detail.html">
+     <input type="button" value="펀딩 참여하기" style="width:100%"></a>
+     
+        </div><!-- detailDes3 -->
+       </div> <!-- detailDes 상품 상세정보, 버튼 -->
+      </div> <!-- detailup -->
+     
+        
+          <!--   <div class="content">
+
+          <form>
+            <input type="button" value="전체" size="50">
+            <input type="button" value="패션/잡화" size="50">
+            <input type="button" value="식품" size="50">
+            <input type="button" value="생활용품" size="50">
+            
+            <select name="choice">
+            <option value="1" selected>최신순</option>
+            <option value="2">높은 가격순</option>
+            <option value="3">낮은 가격순</option>
+            
+            </select>
+            </form>
+            </div>
+            -->
+        
+       <hr>
+       <!-- 상세 글, 상세 정보 -->
+       <div class="detaildown">
+       <div class="moredetail" align="center">
+       <img src="img/f01_toothpaste.GIF" width="700" height="350">
+      
+       <img src="img/f.d1.jpg" width="700" height="350">
+        <img src="img/f02_toothpaste.GIF" width="700" height="350">
+       <img src="img/f.d2.jpg" width="700" height="350">
+        
+       </div> <!-- moredetail 사진 -->
+      
+      
+       <!-- 오른쪽 박스-->
+        
+       <div class="box">
+      <h2>리워드 안내</h2>
+       <h5>10000원 펀딩 참여 <br>   12개 남음</h5>
+       <h2>대나무 칫솔*1개</h2>
+      
+       <ul><li>현재 10명 펀딩 참여</li></ul>
+       <ul><li>발송 예상일 2021.02.16</li></ul> 
+       <hr>
+       
+       
+       <h5>16000원 펀딩 참여  <br>  30개 남음</h5>
+       <h2>세트(대나무칫솔+고체치약)*2개</h2>
+       <ul><li>현재 20명 펀딩 참여</li></ul>
+       <ul><li>발송 예상일 2021.02.08</li></ul> 
+       <hr>
+       
+       
+       <h5>100,000원 펀딩 참여  <br>  12개 남음</h5>
+       <h2>대나무 칫솔*10개</h2>
+       <ul><li>현재 10명 펀딩 참여</li></ul>
+       <ul><li>발송 예상일 2021.02.11</li></ul> 
+       
+       </div> <!-- box div -->
+         </div>  <!-- detaildown -->
+       
+       <div class="revTable">
+       <h2 >참여내역</h2><hr>
+       <h3>총 20명이 참여하였습니다.</h3><hr>
+       <table text-align="center" width="1024" height="300">
+       
+       <tr><td>2020.12.30</td><td>김모모님</td><td>15,700원 참여</td></tr>
+       <tr><td>2021.01.01</td><td>홍모모님</td><td>36,600원 참여</td></tr>       
+       <tr><td>2021.01.03</td><td>이모모님</td><td>15,700원 참여</td></tr>
+       <tr><td>2021.01.08</td><td>신모모님</td><td>32,700원 참여</td></tr>
+       <tr><td>2021.01.10</td><td>강모모님</td><td>13,300원 참여</td></tr>
+       <tr><td>2021.01.28</td><td>차모모님</td><td>18,500원 참여</td></tr>
+       </table>
+       <br>
+            <input type="button" value="◁">
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button" value="3">
+            <input type="button" value="4">
+            <input type="button" value="▷">
+            <br><br>
+        </div> <!-- revTable div -->
+       
+     
+         </div> <!-- detail 닫는 div -->
+         
+         <!-- wrapper -->
+         </div>
+      
+         
+         
+      <!-- 하단사이트정보 -->
+       <div class = "footer">
+         <table class="site_info">
+            <tr>
+               <td>
+                  CS CENTER <br><br>
+                  평일 10:10 - 19:00 (점심시간 13:00 ~ 14:00)<br>
+                  주말 및 공휴일 휴무<br><br>
+                  <a href="">공지사항</a>
+                  <a href="">Q&A</a>
+               </td>
+               <td>
+                  STORE <b>에코빈</b><br>
+                  단체주문/제휴문의 <b>ecobean@naver.com</b><br>
+                  입점문의 <b>ecobean@naver.com</b><br>
+                  TEL <b>0507-1316-4635</b><br>
+                  - <br>
+                  OWNER <b>왕성택</b><br>
+                  COMPANY REG.NO <b>123-45-67890</b><br>
+                  ADDRESS <b>서울특별시 강남구 테헤란로 132<br>
+                  한독약품빌딩 8층 쌍용교육센터</b><br>
+                  Copyright ⓒ에코빈 Inc. All rights reserved.
+               </td>
+            </tr>
+         </table>
+     
+      </div>
+  </div>
+</body>

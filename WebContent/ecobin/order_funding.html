@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>펀딩 참여 | 에코빈</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .wrapper {
+        height: 1600px;
+      }
+    </style>
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script>
+      function sample4_execDaumPostcode() {
+        new daum.Postcode({}).open();
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <div class="wrapper">
+        <!-- 헤더 -->
+        <div class="main_header">
+          <div id="main_logo">
+            <a href="main.html"><img src="img/ecobean_main_logo.png" /></a>
+          </div>
+          <nav id="menubar">
+            <ul>
+              <li><a href="corp.html">기업소개</a></li>
+              <li><a href="product_detail.html">상품정보</a></li>
+              <li><a href="funding_main_Total.html">펀딩</a></li>
+            </ul>
+            <form id="menu_search">
+              <input type="text" placeholder="Search" size="30px" />
+              <input type="button" value="Search" />
+            </form>
+          </nav>
+          <ul id="top_logjoin">
+            <li><a href="a01-mypage-buyList.html">마이페이지</a></li>
+            <li><a href="#">로그아웃</a></li>
+          </ul>
+        </div>
+        <!-- .main_header -->
+
+        <!-- 배너이미지 
+        <img src="img/img_temp.png" class = "banner">-->
+        <!-- ##### 여기에 코드 작성 #####-->
+        <div class="content">
+          <div class="content_wrap">
+            <section class="FundingApplication_section_title">
+              <h2>고체치약과 대나무 칫솔로 친환경 실천!</h2>
+            </section>
+            <section class="buyappl_section">
+              <h3>펀딩내역</h3>
+              <ul>
+                <li>
+                  <strong class="productbuy_name">고체치약 150정</strong>
+                  <span class="productbuy_cnt">2개 | 19,800원</span>
+                </li>
+
+                <li>
+                  <strong class="productbuy_name"
+                    >배송비 <span>2021.02.25 발송예상</span></strong
+                  >
+                  <span>3,000원</span>
+                </li>
+              </ul>
+
+              <div class="productbuy_tot">
+                <strong class="productbuy_name">2021.02.22 결제예정</strong>
+                <span>총 2개 | 총 22,800원</span>
+              </div>
+            </section>
+            <section class="buyappl_section">
+              <h3>배송지 정보</h3>
+              <div class="shipping_choice">
+                <input type="radio" name="shipping" id="default_address" />
+                <label for="default_address">기본 배송지</label>
+                <input type="radio" name="shipping" id="new_address" checked />
+                <label for="new_address">직접 입력</label>
+              </div>
+              <table class="shipping_address">
+                <colgroup>
+                  <col width="150px" />
+                  <col width="auto" />
+                </colgroup>
+                <tr>
+                  <th>이름</th>
+                  <td><input type="text" size="31" /></td>
+                </tr>
+                <tr>
+                  <th>연락처</th>
+                  <td>
+                    <input type="text" size="3" /> -
+                    <input type="text" size="6" /> -
+                    <input type="text" size="6" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>주소</th>
+                  <td>
+                    <input type="text" size="6" />
+                    <input
+                      type="button"
+                      onclick="sample4_execDaumPostcode()"
+                      value="우편번호 찾기"
+                    />
+                    <input type="text" size="34" />
+                  </td>
+                </tr>
+                <tr>
+                  <th><label for="shipping_message">배송메시지</label></th>
+                  <td>
+                    <textarea
+                      name="shipping_message"
+                      rows="5"
+                      cols="63"
+                    ></textarea>
+                  </td>
+                </tr>
+              </table>
+            </section>
+            <section class="buyappl_section">
+              <h3>결제 수단</h3>
+              <ul class="productbuy_left">
+                <li>
+                  <input type="radio" name="pay_method" id="creditcard" />
+                  <label for="creditcard">신용카드</label>
+                </li>
+                <li>
+                  <input type="radio" name="pay_method" id="banktransfer" />
+                  <label for="banktransfer">무통장입금</label>
+                </li>
+              </ul>
+            </section>
+            <section class="buyappl_section">
+              <h3>약관 동의</h3>
+              <div>
+                <div class="FundingApplication_agree">
+                  <label for="agree1">
+                    <input type="checkbox" id="agree1" /> (필수) 약관동의1
+                  </label>
+                  <a href="#agreepop1">자세히보기</a>
+                </div>
+                <div class="FundingApplication_agree">
+                  <label for="agree2">
+                    <input type="checkbox" id="agree2" /> (필수) 약관동의2
+                  </label>
+                  <a href="#agreepop2">자세히보기</a>
+                </div>
+                <div class="FundingApplication_agree">
+                  <label for="agree3">
+                    <input type="checkbox" id="agree3" /> (선택) 약관동의3
+                  </label>
+                  <a href="#agreepop3">자세히보기</a>
+                </div>
+              </div>
+              <div class="popup" id="agreepop1">
+                <div class="lpopup_menu">
+                  <h2>약관1</h2>
+                  <a href="#pay_method">닫기</a>
+                </div>
+                <div class="lpopup_text">
+                  <dl>
+                    <dt>개인정보 약관</dt>
+                    <dd>개인정보(이름,주소,전화번호)는 수집됩니다.</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="dim"></div>
+              <div class="popup" id="agreepop2">
+                <div class="lpopup_menu">
+                  <h2>약관2</h2>
+                  <a href="#pay_method">닫기</a>
+                </div>
+                <div class="lpopup_text">
+                  <dl>
+                    <dt>펀딩 약관</dt>
+                    <dd>펀딩 약관입니다.</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="dim"></div>
+              <div class="popup" id="agreepop3">
+                <div class="lpopup_menu">
+                  <h2>약관3</h2>
+                  <a href="#pay_method">닫기</a>
+                </div>
+                <div class="lpopup_text">
+                  <dl>
+                    <dt>마케팅 약관</dt>
+                    <dd>마케팅 할 수 있습니다</dd>
+                  </dl>
+                  >
+                </div>
+              </div>
+              <div class="dim"></div>
+            </section>
+            <button
+              type="submit"
+              class="fundingapplication_botton"
+              onclick="location.href='complete_funding.html'"
+            >
+              펀딩참여하기
+            </button>
+          </div>
+          <!--div.content_wrap-->
+        </div>
+        <!--.content-->
+      </div>
+      <!-- .wrapper-->
+
+      <!-- 하단사이트정보 -->
+      <div class="footer">
+        <table class="site_info">
+          <tr>
+            <td>
+              CS CENTER <br /><br />
+              평일 10:10 - 19:00 (점심시간 13:00 ~ 14:00)<br />
+              주말 및 공휴일 휴무<br /><br />
+              <a href="">공지사항</a>
+              <a href="">Q&A</a>
+            </td>
+            <td>
+              STORE <b>에코빈</b><br />
+              단체주문/제휴문의 <b>ecobean@naver.com</b><br />
+              입점문의 <b>ecobean@naver.com</b><br />
+              TEL <b>0507-1316-4635</b><br />
+              - <br />
+              OWNER <b>왕성택</b><br />
+              COMPANY REG.NO <b>123-45-67890</b><br />
+              ADDRESS
+              <b
+                >서울특별시 강남구 테헤란로 132<br />
+                한독약품빌딩 8층 쌍용교육센터</b
+              ><br />
+              Copyright ⓒ에코빈 Inc. All rights reserved.
+            </td>
+          </tr>
+        </table>
+        <!--.site_info-->
+      </div>
+      <!--.footer-->
+    </div>
+    <!--.page-->
+  </body>
+</html>
